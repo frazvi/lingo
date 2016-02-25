@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="lingoApp">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+    <script src="/javascripts/main.js"></script>
+  </head>
+  <body ng-controller="translateController">
+	  
+    <div class="container">
+      <h1>Translate</h1>
+      <form ng-submit="translator()">
+          <input ng-model="word.original" type="text" placeholder="Original Language">
+          <input ng-model="word.target" type="text" placeholder="Target Language">
+          <input ng-model="word.word" type="text" placeholder="Word to Translate">
+          <input type="submit">
+      </form>
+    </div>
+	 
+
+  </body>
+</html>
